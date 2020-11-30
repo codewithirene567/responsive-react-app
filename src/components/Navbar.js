@@ -5,6 +5,7 @@ function Navbar() {
     const [click, setClick] = useState(false);
     
     const handleClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false)
 
     return (
         <>
@@ -22,6 +23,35 @@ function Navbar() {
                         click which is why it is showing !click(not click) and show the bars */}
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        {/* if they click it then make it active to go to the appropriate route
+                         so it shows otherwise if they aren't clicking it then show the nav menu */}
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                                {/* when the user does click on it then call closeMobileMenu
+                                a function that will close the mobile menu by setting the setclick to false
+                                thereby showing the default menu again*/}
+                                Home
+                            </Link>
+                        </li>
+                        {/* these are the different menu options listed with their links to go to the right routes
+                        to get to the right webpages */}
+                        <li className='nav-item'>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                                Services
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                Products
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                                Sign Up
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </>
