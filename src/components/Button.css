@@ -1,0 +1,21 @@
+:root{
+    --primary: #fff;
+}
+/* above lines match the root element of the tree (button) representing the element it refers to */
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* the cursor line means that when you mouse over it, then the element will
+    change to the shape of the right side; */
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    /* the value of primary is inserterd here with var */
+    color: #242424;
+    border: 1px solid var(--primary);
+}
