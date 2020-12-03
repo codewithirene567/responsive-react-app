@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from './Button';
@@ -18,7 +18,17 @@ function Navbar() {
         }
     };
 //add event listener to get the appropriate elements to resize to invoke function
-    window.addEventListener('resize', showButton);
+  
+//useEffect is a hook that is telling react to run the side effect
+//independent of rendering
+useEffect(()=> {
+    showButton()
+    //call the logic of the show button function
+}, [])
+//an empty array is a dependency which is letting showButton() only
+//run once the initial rendering
+
+window.addEventListener('resize', showButton);
 
     return (
         <>
