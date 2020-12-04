@@ -17,6 +17,32 @@ function Cards(){
                             label='Adventure'
                             path='/services'
                         />
+                        <CardItem
+                            src="images/img-2.jpg"
+                            text="Go to the Islands of Bali by Boat"
+                            label='Luxury'
+                            path='/services'
+                        />
+                    </ul>
+                    <ul>
+                        <CardItem
+                            src="images/img-7.jpg"
+                            text="Hike up Pikes Peak in Colorado"
+                            label='Adventure'
+                            path='/services'
+                        />
+                        <CardItem
+                            src="images/img-4.jpg"
+                            text="Play some soccer on a Himilayan Mountain"
+                            label='Luxury'
+                            path='/services'
+                        />
+                         <CardItem
+                            src="images/img-8.jpg"
+                            text="Take a guided tour - fully camel powered"
+                            label='Luxury'
+                            path='/services'
+                        />
                     </ul>
                 </div>
             </div>
