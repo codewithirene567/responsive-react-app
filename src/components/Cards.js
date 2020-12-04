@@ -1,6 +1,7 @@
 //hold all the cards
-import React from 'react'
-import CardItem from './CardItem'
+import React from 'react';
+import CardItem from './CardItem';
+import './Cards.css';
 
 function Cards(){
     return (
@@ -9,7 +10,13 @@ function Cards(){
             <div className="cards_container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
-                        <CardItem />
+                        <CardItem
+                            src="images/img-9.jpg"
+                            text="Explore the hidden waterfall deep inside the 
+                            jungle"
+                            label='Adventure'
+                            path='/services'
+                        />
                     </ul>
                 </div>
             </div>
