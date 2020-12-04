@@ -24,7 +24,7 @@ function Cards(){
                             path='/services'
                         />
                     </ul>
-                    <ul>
+                    <ul className='cards__items'>
                         <CardItem
                             src="images/img-7.jpg"
                             text="Hike up Pikes Peak in Colorado"
